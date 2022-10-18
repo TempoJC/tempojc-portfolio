@@ -1,0 +1,16 @@
+{
+	"editor.formatOnSave": true,
+	"editor.quickSuggestions": {
+		"other": "on",
+		"comments": "off",
+		"strings": true
+	},
+	"tailwindCSS.classAttributes": ["class", "className", "ngClass"],
+	"tailwindCSS.experimental.classRegex": [
+    ".*className\\s?[=:]\\s?[\"'`]([^\"'`]*)",
+    ".*ClassName\\s?[=:][\\s]+[\"'`]([^\"'`]*)"
+	],
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false
+}
