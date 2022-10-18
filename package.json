@@ -1,24 +1,49 @@
 {
-  "name": "nextjs-starter-skeleton",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+	"name": "nextjs-starter-skeleton",
+	"version": "0.1.0",
+	"description": "🦁 nextjs starter skeleton",
+	"private": true,
+	"author": {
+    "name": "Jose Luis Camargo",
+    "email": "josel.cc.dam@gmail.com"
   },
-  "dependencies": {
-    "next": "12.3.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "18.11.0",
-    "@types/react": "18.0.21",
-    "@types/react-dom": "18.0.6",
-    "eslint": "8.25.0",
-    "eslint-config-next": "12.3.1",
-    "typescript": "4.8.4"
-  }
+	"license": "MIT",
+	"keywords": [
+    "nextjs",
+    "typescript",
+    "eslint",
+    "prettier"
+  ],
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"format:prettier": "prettier --write '**/**.{js,ts,jsx,tsx,json,md,css}'",
+		"format:eslint": "eslint --fix '**/**.{js,ts,jsx,tsx}'",
+		"format": "npm run format:eslint && npm run format:prettier",
+		"check:format": "prettier --check '**/**.{js,ts,jsx,tsx}'",
+		"check:lint": "next lint",
+		"check:types": "tsc --pretty --noEmit"
+	},
+	"dependencies": {
+		"next": "12.3.1",
+		"react": "18.2.0",
+		"react-dom": "18.2.0"
+	},
+	"devDependencies": {
+		"@types/node": "18.11.0",
+		"@types/react": "18.0.21",
+		"@types/react-dom": "18.0.6",
+		"@typescript-eslint/eslint-plugin": "^5.40.1",
+		"@typescript-eslint/parser": "^5.40.1",
+		"eslint": "^8.25.0",
+		"eslint-config-next": "12.3.1",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-react": "^7.31.10",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"prettier": "^2.7.1",
+		"typescript": "4.8.4"
+	}
 }

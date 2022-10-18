@@ -1,20 +1,43 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+	"compilerOptions": {
+		"target": "es5",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"baseUrl": ".",
+		"paths": {
+			// Components
+			"Atoms/*": ["./src/components/atoms/*"],
+			"Molecules/*": ["./src/components/molecules/*"],
+			"Organisms/*": ["./src/components/organisms/*"],
+			"Species/*": ["./src/components/species/*"],
+			"Templates/*": ["./src/components/templates/*"],
+			// Other folders
+			"@/constants/*": ["./src/constants/*"],
+			"@types": ["./@types/"],
+			"@types/*": ["./@types/*"],
+			"config": ["./src/config/"],
+			"config/*": ["./src/config/*"],
+			"MockData": ["./src/mockData"],
+			"MockData/*": ["./src/mockData/*"],
+			"pages/*": ["./src/pages*"],
+			"public/*": ["./public/*"],
+			"queries/*": ["./src/queries/*"],
+			"hooks/*": ["./src/hooks/*"],
+			"redux/*": ["./src/redux/*"],
+			"utils/*": ["./src/utils/*"]
+		}
+	},
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"exclude": ["node_modules"]
 }
