@@ -20,15 +20,16 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"test": "jest --watch",
+		"test": "jest",
+		"test:watch": "jest --watchAll",
 		"test:ci": "jest --ci",
+		"test:coverage": "npm run test -- --coverage --silent",
 		"format:prettier": "prettier --write '**/**.{js,ts,jsx,tsx,json,md,css}'",
 		"format:eslint": "eslint --fix '**/**.{js,ts,jsx,tsx}'",
 		"format": "npm run format:eslint && npm run format:prettier",
 		"check:format": "prettier --check '**/**.{js,ts,jsx,tsx}'",
 		"check:lint": "next lint",
-		"check:types": "tsc --pretty --noEmit",
-		"test:coverage": "npm run test -- --coverage --silent"
+		"check:types": "tsc --pretty --noEmit"
 	},
 	"dependencies": {
 		"next": "12.3.1",

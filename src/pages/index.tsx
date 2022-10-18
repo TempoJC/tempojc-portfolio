@@ -1,7 +1,8 @@
+import { Button } from '@/Atoms/Button';
+import { Calculadora } from '@/Molecules/Calculadora';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import { Calculadora } from '../components/molecules/Calculadora';
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
@@ -18,7 +19,8 @@ const Home: NextPage = () => {
 					Welcome to <a href="https://nextjs.org">Next.js!</a>
 				</h1>
 
-				<Calculadora />
+				<Calculadora></Calculadora>
+				<Button />
 			</main>
 
 			<footer className={styles.footer}>
