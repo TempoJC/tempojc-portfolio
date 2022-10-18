@@ -1,7 +1,19 @@
 {
 	"name": "nextjs-starter-skeleton",
 	"version": "0.1.0",
+	"description": "🦁 nextjs starter skeleton",
 	"private": true,
+	"author": {
+    "name": "Jose Luis Camargo",
+    "email": "josel.cc.dam@gmail.com"
+  },
+	"license": "MIT",
+	"keywords": [
+    "nextjs",
+    "typescript",
+    "eslint",
+    "prettier"
+  ],
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
