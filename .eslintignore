@@ -1,4 +1,15 @@
-node_modules
-.next
-coverage
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# lock
+package-lock.json
+yarn.lock
+
 /*.js
