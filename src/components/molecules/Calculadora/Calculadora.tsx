@@ -28,14 +28,14 @@ const Calculadora = () => {
 				className={styles.input}
 				data-testid="num1"
 				value={num1}
-				onChange={e => setNum1(parseInt(e.target.value))}
+				onChange={(e) => setNum1(parseInt(e.target.value))}
 			/>
 			<input
 				type="number"
 				className={styles.input}
 				data-testid="num2"
 				value={num2}
-				onChange={e => setNum2(parseInt(e.target.value))}
+				onChange={(e) => setNum2(parseInt(e.target.value))}
 			/>
 			<button onClick={add} className={styles.button} data-testid="add">
 				Add

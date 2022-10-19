@@ -7,11 +7,13 @@
 	justify-content: center;
 	color: white;
 }
+
 .result {
 	font-size: 4rem;
 	font-weight: bold;
 	margin-bottom: 1rem;
 }
+
 .input {
 	margin: 0.5rem 0;
 	padding: 0.5rem;
@@ -22,6 +24,7 @@
 	color: white;
 	border-radius: 10px;
 }
+
 .button {
 	font-size: large;
 	padding: 0.5rem;
