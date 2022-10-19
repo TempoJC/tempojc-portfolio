@@ -20,7 +20,6 @@
 			"@/Atoms/*": ["./src/components/atoms/*"],
 			"@/Molecules/*": ["./src/components/molecules/*"],
 			"@/Organisms/*": ["./src/components/organisms/*"],
-			"@/Species/*": ["./src/components/species/*"],
 			"@/Templates/*": ["./src/components/templates/*"],
 			// Other folders
 			"@/Constants/*": ["./src/constants/*"],
