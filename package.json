@@ -25,7 +25,7 @@
 		"start": "next start",
 		"lint": "next lint",
 		"lint:css": "stylelint '**/**.css'",
-  	"lint:css:fix": "stylelint --fix '**/**.css'",
+		"lint:css:fix": "stylelint --fix '**/**.css'",
 		"test": "jest",
 		"test:watch": "jest --watchAll",
 		"test:ci": "jest --ci",
