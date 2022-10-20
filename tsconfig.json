@@ -1,20 +1,41 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+	"compilerOptions": {
+		"target": "es5",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"baseUrl": ".",
+		"paths": {
+			// Components
+			"@/Atoms/*": ["./src/components/atoms/*"],
+			"@/Molecules/*": ["./src/components/molecules/*"],
+			"@/Organisms/*": ["./src/components/organisms/*"],
+			"@/Templates/*": ["./src/components/templates/*"],
+			// Other folders
+			"@/Constants/*": ["./src/constants/*"],
+			"@/Types": ["./@types/"],
+			"@/Types/*": ["./@types/*"],
+			"@/Config": ["./src/config/"],
+			"@/Config/*": ["./src/config/*"],
+			"@/Mocks": ["./src/mocks"],
+			"@/Mocks/*": ["./src/mocks/*"],
+			"@/Pages/*": ["./src/pages*"],
+			"@/Public/*": ["./public/*"],
+			"@/Utils/*": ["./src/utils/*"],
+			"@/Hooks/*": ["./src/hooks/*"],
+			"@/state/*": ["./src/state/*"]
+		}
+	},
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"exclude": ["node_modules"]
 }
