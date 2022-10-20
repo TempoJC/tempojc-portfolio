@@ -2,7 +2,7 @@
 	"name": "nextjs-starter-skeleton",
 	"version": "0.1.0",
 	"description": "🦁 nextjs starter skeleton",
-	"private": true,
+	"private": false,
 	"author": {
 		"name": "Jose Luis Camargo",
 		"email": "josel.cc.dam@gmail.com"
@@ -14,8 +14,10 @@
 		"eslint",
 		"prettier",
 		"jest",
+		"testing-library",
 		"husky",
-		"lint-staged"
+		"lint-staged",
+		"stylelint"
 	],
 	"scripts": {
 		"dev": "next dev",
@@ -23,7 +25,7 @@
 		"start": "next start",
 		"lint": "next lint",
 		"lint:css": "stylelint '**/**.css'",
-  	"lint:css:fix": "stylelint --fix '**/**.css'",
+		"lint:css:fix": "stylelint --fix '**/**.css'",
 		"test": "jest",
 		"test:watch": "jest --watchAll",
 		"test:ci": "jest --ci",
