@@ -1,6 +1,8 @@
 # NextJS Starter Skeleton
 
-Este es el esqueleto de un proyecto[Next.js](https://nextjs.org/) iniciado con [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) y configurado con todo el stack tecnológico necesario para empezar a desarrollar cualquier proyecto.
+Este es el esqueleto de un proyecto [Next.js](https://nextjs.org/) iniciado con [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) y configurado con todo el stack tecnológico necesario para empezar a desarrollar cualquier proyecto.
+
+Cuenta con la configuración de typescript, eslint, prettier,.vscode, jest, husky, lint-staged, stylelint.
 
 ## Project structure
 
@@ -62,8 +64,7 @@ Este es el esqueleto de un proyecto[Next.js](https://nextjs.org/) iniciado con [
     │   ├── state
     │   └── styles
     ├── types
-    ├── public
-    └── static
+    └── public
 
 ### Standard directories
 
@@ -83,8 +84,8 @@ Este es el esqueleto de un proyecto[Next.js](https://nextjs.org/) iniciado con [
 
 ## Indicaciones del proyecto
 
-- **commits:** Los commits siguen una nomenclatura, ver rules de [commitlint](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional#rules).
-- **Gestor de paquetes:** El proyecto se ha configurado con npm.
+- **Commits:** Los commits siguen una nomenclatura, ver rules en [commitlint](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional#rules).
+- **Gestor de dependencias:** El proyecto se ha configurado con el gestor NPM.
 - **Stylelint:** Tiene una configuración estándar para archivos CSS, si se quiere utilizar el lint en archivos diferentes al estandar(.css) se tiene que utilizar una configuración personalizada (https://stylelint.io/user-guide/get-started#linting-everything-else).
 
 ## Getting this project up and running
