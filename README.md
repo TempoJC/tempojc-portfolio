@@ -120,6 +120,7 @@ Portfolio
 - [commitlint](https://commitlint.js.org/#/)
 - [Lint-staged](https://www.styled-components.com)
 - [Stylelint](https://stylelint.io/)
+- [framer-motion](https://www.framer.com/docs/)
 
 ## Authors
 
