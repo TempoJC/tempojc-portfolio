@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import styles from './Calculadora.module.css';
+import styles from './Calculator.module.css';
 
-const Calculadora = () => {
+const Calculator = () => {
 	const [num1, setNum1] = useState<number>(0);
 	const [num2, setNum2] = useState<number>(0);
 	const [result, setResult] = useState<number>(0);
@@ -61,4 +61,4 @@ const Calculadora = () => {
 	);
 };
 
-export { Calculadora };
+export { Calculator };

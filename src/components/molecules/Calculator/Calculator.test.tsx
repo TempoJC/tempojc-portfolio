@@ -1,9 +1,9 @@
-import { Calculadora } from '../Calculadora';
 import { fireEvent, render, screen } from '@testing-library/react';
+import { Calculator } from '.';
 
 describe('Calculator', () => {
 	beforeEach(() => {
-		render(<Calculadora />);
+		render(<Calculator />);
 	});
 
 	it('renders a calculator', () => {
