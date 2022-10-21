@@ -22,7 +22,4 @@ module.exports = {
 
 	// Stylelint only CSS files
 	'*.{css}': ['stylelint --fix'],
-
-	// Type check Jest files
-	'*.test.{ts,tsx}': ['jest'],
 };

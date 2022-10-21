@@ -5,7 +5,6 @@ describe('Footer', () => {
 	it('renders correctly', () => {
 		render(<Footer />);
 
-		expect(screen.getByText(/Powered by/i)).toBeInTheDocument();
-		expect(screen.getByText(/@TempoJC/i)).toBeInTheDocument();
+		expect(screen.getByText(/Jose Luis Camargo/i)).toBeInTheDocument();
 	});
 });
