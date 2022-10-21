@@ -1,7 +1,6 @@
 import { FC, ReactNode } from 'react';
 import { Footer } from '@/Organisms/Footer';
 import { Header } from '@/Organisms/Header';
-import styles from './Layout.module.css';
 
 interface LayoutProps {
 	children: ReactNode;
@@ -9,7 +8,7 @@ interface LayoutProps {
 
 export const Layout: FC<LayoutProps> = ({ children }) => {
 	return (
-		<div className={styles.container}>
+		<div className="flex flex-col justify-start min-h-screen">
 			<Header />
 			<main>{children}</main>
 			<Footer />
