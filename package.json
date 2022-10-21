@@ -1,7 +1,7 @@
 {
-	"name": "nextjs-starter-skeleton",
+	"name": "tempojc-portfolio",
 	"version": "0.4.0",
-	"description": "🦁 nextjs starter skeleton",
+	"description": "🦁 TempoJC portfolio",
 	"private": false,
 	"author": {
 		"name": "Jose Luis Camargo",
