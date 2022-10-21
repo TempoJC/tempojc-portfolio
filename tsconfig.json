@@ -33,7 +33,7 @@
 			"@/Public/*": ["./public/*"],
 			"@/Utils/*": ["./src/utils/*"],
 			"@/Hooks/*": ["./src/hooks/*"],
-			"@/state/*": ["./src/state/*"]
+			"@/State/*": ["./src/state/*"]
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
