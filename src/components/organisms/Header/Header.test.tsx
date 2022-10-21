@@ -1,11 +1,22 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { Header } from '../Header';
+
+jest.mock('next/router', () => ({
+	__esModule: true,
+	useRouter: jest.fn().mockReturnValue({
+		route: '',
+		pathname: '',
+		query: '',
+		asPath: '',
+	}),
+}));
+
+jest.mock('@/Atoms/Logo');
 
 describe('Header', () => {
 	it('renders correctly', () => {
-		render(<Header />);
+		const { queryByTestId } = render(<Header />);
 
-		expect(screen.getByText(/Welcome to/i)).toBeInTheDocument();
-		expect(screen.getByText(/Next Skeleton!/i)).toBeInTheDocument();
+		expect(queryByTestId(/header/i)).toBeTruthy();
 	});
 });
