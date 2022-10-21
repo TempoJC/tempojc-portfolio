@@ -110,6 +110,7 @@ Portfolio
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [React JS](https://reactjs.org/)
+- [Tailwind](https://tailwindcss.com/docs/installation)
 - [Typescript](https://www.typescriptlang.org/docs/)
 - [Eslint](https://eslint.org/docs/latest/)
 - [Prettier](https://prettier.io/docs/en/index.html)
