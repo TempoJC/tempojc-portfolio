@@ -1,8 +1,9 @@
-import { Logo } from '@/Atoms/Logo';
-import { NAV_ITEMS } from './Header.constants';
-import { NavigationItem } from '@/Atoms/NavigationItem';
-import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import { NavigationItem } from '@/Atoms/NavigationItem';
+import { NAV_ITEMS } from './Header.constants';
+import { Logo } from '@/Atoms/Logo';
+import { BurgerIcon } from '@/Atoms/BurgerIcon';
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -74,7 +75,7 @@ const Header = () => {
 						onClick={() => setIsOpen((prev) => !prev)}
 						aria-label="Menu"
 					>
-						{/* BurgerIcon */}
+						<BurgerIcon isOpen={isOpen} />
 					</button>
 
 					<div className="hidden md:block">{/* MobileMenu */}</div>
