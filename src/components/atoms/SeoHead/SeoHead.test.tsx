@@ -13,7 +13,7 @@ jest.mock('next/head', () => {
 describe('Head', () => {
 	it('renders correctly', () => {
 		const title = 'Test Next Skeleton';
-		render(<SeoHead title={title} />, {
+		render(<SeoHead title={title} description="Test description" />, {
 			container: document.head,
 		});
 
