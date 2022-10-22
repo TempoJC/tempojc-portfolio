@@ -22,6 +22,6 @@ describe('Header', () => {
 	it('renders correctly', () => {
 		const { queryByTestId } = render(<Header />);
 
-		expect(queryByTestId(/header/i)).toBeTruthy();
+		expect(queryByTestId(/header/i)).toBeInTheDocument();
 	});
 });
