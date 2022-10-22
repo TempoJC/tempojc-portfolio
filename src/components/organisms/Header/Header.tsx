@@ -1,10 +1,12 @@
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import { NAV_ITEMS } from './Header.constants';
 import { Logo } from '@/Atoms/Logo';
+import { NAV_ITEMS } from './Header.constants';
+import { NavigationItem } from '@/Atoms/NavigationItem';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 
 const Header = () => {
-	const [isOpen, setIsOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState<boolean>(false);
+	const [activeHash, setActiveHash] = useState<string>('/');
 	const router = useRouter();
 
 	useEffect(() => {
@@ -17,9 +19,29 @@ const Header = () => {
 		};
 	}, [isOpen]);
 
+	const handleHashChange = (url: string) => {
+		setActiveHash(url);
+	};
+
 	useEffect(() => {
 		setIsOpen(false);
-	}, [router.pathname]);
+		router.events.on('hashChangeStart', handleHashChange);
+
+		// If the component is unmounted, unsubscribe
+		// from the event with the `off` method:
+		return () => {
+			router.events.off('hashChangeStart', handleHashChange);
+		};
+	}, [router]);
+
+	const navigationVariants = {
+		hidden: { opacity: 0, y: -10 },
+		visible: (custom: number) => ({
+			opacity: 1,
+			y: 0,
+			transition: { delay: custom },
+		}),
+	};
 
 	return (
 		<>
@@ -33,10 +55,16 @@ const Header = () => {
 					<nav className="hidden md:block">
 						<ul className="flex gap-8 text-lg">
 							{NAV_ITEMS.map(({ hash, title }, index) => (
-								<li key={`${title}-${hash}-${index} `}>
-									{/* NavigationItem */}
-									{title}
-								</li>
+								<NavigationItem
+									animate="visible"
+									customDelay={(index + 1) * 0.1}
+									hash={hash}
+									initial="hidden"
+									isActive={activeHash === `/#${hash}`}
+									key={`${hash}${index}`}
+									title={title}
+									variants={navigationVariants}
+								/>
 							))}
 						</ul>
 					</nav>
