@@ -10,7 +10,10 @@ const Home: NextPage = () => {
 
 	return (
 		<>
-			<SeoHead title="Next Skeleton" />
+			<SeoHead
+				title="Senior Software Engineer – Jose Luis Camargo"
+				description="A Front-End Software Engineer with a focus on JavaScript and React. I have more than 7 years experience working in software engineering."
+			/>
 			CONTENIDO DEL INDEX
 		</>
 	);
