@@ -4,6 +4,7 @@ import { NavigationItem } from '@/Atoms/NavigationItem';
 import { NAV_ITEMS } from './Header.constants';
 import { Logo } from '@/Atoms/Logo';
 import { BurgerIcon } from '@/Atoms/BurgerIcon';
+import { ThemeToggle } from '@/Atoms/ThemeToggle';
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -78,7 +79,9 @@ const Header = () => {
 						<BurgerIcon isOpen={isOpen} />
 					</button>
 
-					<div className="hidden md:block">{/* MobileMenu */}</div>
+					<div className="hidden md:block">
+						<ThemeToggle />
+					</div>
 				</div>
 			</header>
 
