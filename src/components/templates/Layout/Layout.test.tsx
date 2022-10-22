@@ -1,6 +1,5 @@
-import { useRouter } from 'next/router';
-import { render } from '@testing-library/react';
 import { Layout } from '../Layout';
+import { render } from '@testing-library/react';
 
 jest.mock('next/router', () => ({
 	__esModule: true,
@@ -9,6 +8,10 @@ jest.mock('next/router', () => ({
 		pathname: '',
 		query: '',
 		asPath: '',
+		events: {
+			on: jest.fn(),
+			off: jest.fn(),
+		},
 	}),
 }));
 

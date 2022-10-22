@@ -1,8 +1,5 @@
 import Head from 'next/head';
-
-export interface HeadProps {
-	title: string;
-}
+import { HeadProps } from './SeoHead.types';
 
 const SeoHead = ({ title }: HeadProps) => (
 	<Head>

@@ -8,9 +8,14 @@ jest.mock('next/router', () => ({
 		pathname: '',
 		query: '',
 		asPath: '',
+		events: {
+			on: jest.fn(),
+			off: jest.fn(),
+		},
 	}),
 }));
 
+jest.mock('@/Atoms/NavigationItem');
 jest.mock('@/Atoms/Logo');
 
 describe('Header', () => {

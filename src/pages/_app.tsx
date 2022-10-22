@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 		<ThemeProvider attribute="class">
 			<Layout>
 				<AnimatePresence
-					exitBeforeEnter
+					// exitBeforeEnter
 					initial={false}
 					onExitComplete={() => window.scrollTo(0, 0)}
 				>
