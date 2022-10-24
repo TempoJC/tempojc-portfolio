@@ -18,7 +18,7 @@ const customJestConfig = {
 		'^@/Templates(.*)$': '<rootDir>/src/components/templates$1',
 		// Other folders
 		'^@/Constants(.*)$': '<rootDir>/src/constants$1',
-		'^@/types(.*)$': '<rootDir>/@types$1',
+		'^@/@types(.*)$': '<rootDir>/@types$1',
 		'^@/Config(.*)$': '<rootDir>/src/config$1',
 		'^@/Mocks(.*)$': '<rootDir>/src/mockData$1',
 		'^@/Pages(.*)$': '<rootDir>/src/pages$1',
