@@ -1,10 +1,13 @@
+import { createRef, useEffect } from 'react';
 import type { NextPage } from 'next';
 import smoothscroll from 'smoothscroll-polyfill';
 import { SeoHead } from '@/Atoms/SeoHead';
-import { useEffect } from 'react';
 import { Hero } from '@/Organisms/Hero';
+import AboutPage from './about';
 
 const Home: NextPage = () => {
+	const aboutRef = createRef<HTMLDivElement>();
+
 	useEffect(() => {
 		smoothscroll.polyfill();
 	}, []);
@@ -16,6 +19,7 @@ const Home: NextPage = () => {
 				description="A Front-End Software Engineer with a focus on JavaScript and React. I have more than 7 years experience working in software engineering."
 			/>
 			<Hero />
+			<AboutPage refNode={aboutRef} />
 		</>
 	);
 };
