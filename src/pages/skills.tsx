@@ -23,7 +23,7 @@ const SkillsPage: NextPage<PageProps> = ({ refNode }) => {
 	}, [theme]);
 
 	return (
-		<Container ref={refNode} id={'about'}>
+		<Container ref={refNode} id={'skills'}>
 			<div className="flex flex-col md:flex-row lg:flex-row">
 				<div className="w-full md:w-2/5 lg:w-w-2/5 m-auto">
 					<h1 className="headline mb-6 text-3xl md:text-5xl lg:text-4xl">
