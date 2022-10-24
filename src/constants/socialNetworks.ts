@@ -19,7 +19,7 @@ export const SOCIAL_NETWORKS = [
 	},
 	{
 		name: 'Twitter',
-		url: 'https://github.com/TempoJC',
+		url: 'https://twitter.com/TempoJC88',
 		icon: faTwitter,
 	},
 	{
