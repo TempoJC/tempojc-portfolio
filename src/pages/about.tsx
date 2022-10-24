@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 import Image from 'next/image';
 import { Container } from '@/Atoms/Container';
 import me from '@/Public/assets/me.jpeg';
-import { PageProps } from '@/Types/pages';
+import { PageProps } from '@/@Types';
 
 const AboutPage: NextPage<PageProps> = ({ refNode }) => {
 	const age = Math.floor(
